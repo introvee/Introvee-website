@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "vite --host 0.0.0.0",
     "build": "vite build && node scripts/copy-static.mjs",
+    "deploy": "npm run build && wrangler pages deploy dist --project-name=introvee-website",
+    "deploy:preview": "npm run build && wrangler pages deploy dist --project-name=introvee-website --branch=preview",
     "typecheck": "tsc --noEmit",
     "preview": "vite preview --host 0.0.0.0"
   },
@@ -20,6 +22,7 @@
     "@types/react-dom": "^19.2.4",
     "@vitejs/plugin-react": "^5.2.0",
     "typescript": "~6.0.3",
-    "vite": "^7.1.3"
+    "vite": "^7.1.3",
+    "wrangler": "^4.124.0"
   }
 }
