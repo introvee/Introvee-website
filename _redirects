@@ -5,9 +5,9 @@
 /privacy-policy/index.html /privacy 301
 /privacy-policy /privacy 301
 /help /support 301
+/admin / 301
+/admin/* / 301
 
-/admin /admin/index.html 200
-/admin/* /admin/index.html 200
 /support /support/index.html 200
 /terms /terms/index.html 200
 /delete-account /delete-account/index.html 200
