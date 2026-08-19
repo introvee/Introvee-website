@@ -4,7 +4,6 @@ import { join } from 'node:path';
 const root = process.cwd();
 const dist = join(root, 'dist');
 const entries = [
-  'index.html',
   'styles.css',
   'components.js',
   '_redirects',
