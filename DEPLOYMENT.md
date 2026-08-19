@@ -6,11 +6,13 @@ This folder is a static Cloudflare Pages site.
 
 - Project name: `introvee-website`
 - Build command: `npm run build`
+- Deploy command: `npx wrangler pages deploy dist --project-name=introvee-website`
+- Version command: leave blank
 - Build output directory: `dist`
 - Production branch: `main`
 - Root directory: repository root for this website repo
 
-Do not use `npx wrangler deploy` for this project. That command deploys a Worker and expects a Worker entry point or Workers static assets config. For Git-connected Cloudflare Pages, run only the build command and let Pages upload the configured `dist` output directory.
+Do not use `npx wrangler deploy` or `npx wrangler versions upload --assets=./dist` for this project. Those are Workers commands and expect a Worker entry point or Workers static assets config.
 
 The `_redirects` file contains Cloudflare Pages redirects for clean legacy URLs and static page rewrites.
 
